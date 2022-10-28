@@ -1,8 +1,134 @@
+:root {
+  --title-text-color: #000000;
+  --primary-text-color: rgba(0, 0, 0, 0.8);
+  --primary-white-color: #ffffff;
+  --accent-color: #18a0fb;
+  --secondary-bg-color: #f5f5f5;
+  --add-color: #ffa500;
+}
+
 legend {
-  color: red;
+  color: var(--accent-color);
   font-weight: bold;
 }
 
 body {
-  background-color: rgb(240, 240, 240);
+  /* геометрія */
+
+  /* колір */
+  background-color: var(--secondary-bg-color);
+  color: var(--primary-text-color);
+
+  /* шрифт */
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 400;
+
+  /* динаміка */
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+a[href='abc'] {
+  color: var(--accent-color);
+}
+
+a[href='bcd'] {
+  color: var(--add-color);
+}
+
+a[href='cde'] {
+  color: var(--accent-color);
+}
+
+.list {
+  list-style: none;
+}
+
+.logo {
+  color: var(--title-text-color);
+
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.site-nav .link {
+  color: var(--accent-color);
+
+  text-decoration: none;
+}
+
+.site-nav .link:hover {
+  color: var(--add-color);
+}
+
+.section-title {
+  color: var(--title-text-color);
+
+  font-size: 36px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.feature-list .title {
+  /* геометрія */
+
+  /* колір */
+  color: var(--title-text-color);
+
+  /* шрифт */
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+
+  /* динаміка */
+}
+
+.btn {
+  color: var(--title-text-color);
+  background-color: var(--primary-white-color);
+
+  text-decoration: none;
+}
+
+.btn.primary {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
+.btn.secondary {
+  color: var(--accent-color);
+  background-color: var(--primary-white-color);
+}
+
+.hero-title {
+  /* геометрія */
+  text-transform: uppercase;
+
+  /* колір */
+  color: var(--title-text-color);
+
+  /* шрифт */
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 1.4;
+  text-align: center;
+
+  /* динаміка */
+}
+
+/* геометрія */
+
+/* колір */
+
+/* шрифт */
+
+/* динаміка */
