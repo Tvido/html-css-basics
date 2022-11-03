@@ -1,3 +1,11 @@
+/* геометрія */
+
+/* колір */
+
+/* шрифт */
+
+/* динаміка */
+
 :root {
   --title-text-color: #000000;
   --primary-text-color: rgba(0, 0, 0, 0.8);
@@ -5,6 +13,12 @@
   --accent-color: #18a0fb;
   --secondary-bg-color: #f5f5f5;
   --add-color: #ffa500;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 legend {
@@ -51,6 +65,17 @@ a[href='cde'] {
 
 .list {
   list-style: none;
+}
+
+.bg {
+  background-color: #ccc;
+}
+
+.container {
+  width: 1230px;
+  margin: 0 auto;
+  padding: 0 15px;
+  background-color: teal;
 }
 
 .logo {
@@ -132,3 +157,43 @@ a[href='cde'] {
 /* шрифт */
 
 /* динаміка */
+
+.button {
+  /* геометрія */
+  display: inline-block;
+  width: 180px;
+  padding: 11px 34px;
+  border-radius: 6px;
+
+  /* колір */
+
+  /* шрифт */
+  text-decoration: none;
+
+  /* динаміка */
+}
+
+.button.primary {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
+.button.secondary {
+  color: var(--accent-color);
+  background-color: var(--primary-white-color);
+}
+
+.button-icon {
+  /* геометрія */
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 10px;
+  /* колір */
+  background-color: #ffa500;
+
+  /* шрифт */
+
+  /* динаміка */
+}
