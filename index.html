@@ -54,15 +54,17 @@
         <fieldset>
           <legend>BUTTONS</legend>
 
-          <ul class="list">
-            <li><a class="button secondary" href="./index.html">One</a></li>
-            <li>
-              <a class="button primary" href="./index.html">
-                <span class="button-icon"></span>
-                Click me!</a
-              >
-            </li>
-          </ul>
+          <div class="container">
+            <ul class="list">
+              <li><a class="button secondary" href="./index.html">One</a></li>
+              <li>
+                <a class="button primary" href="./index.html">
+                  <span class="button-icon"></span>
+                  Click me!</a
+                >
+              </li>
+            </ul>
+          </div>
 
           <hr />
         </fieldset>
@@ -72,63 +74,66 @@
         <fieldset>
           <legend>HEADER</legend>
 
-          <header class="page-header">
-            <nav>
-              <a class="logo" href="/">
-                <img src="./images/svg/logo.svg" alt="logo" width="60" />
-                photo</a
-              >
+          <div class="container">
+            <header class="page-header">
+              <nav>
+                <a class="logo" href="/">
+                  <img src="./images/svg/logo.svg" alt="logo" width="60" />
+                  photo</a
+                >
 
-              <ul class="site-nav list">
-                <li><a class="link" href="">one</a></li>
-                <li><a class="link" href="">two</a></li>
-                <li><a class="link" href="">three</a></li>
-              </ul>
+                <ul class="site-nav list">
+                  <li><a class="link" href="">one</a></li>
+                  <li><a class="link" href="">two</a></li>
+                  <li><a class="link" href="">three</a></li>
+                </ul>
 
-              <ul class="auth-nav list">
-                <li><a class="btn secondary" href="">sign in</a></li>
-                <li><a class="btn primary" href="">sign up</a></li>
-              </ul>
-            </nav>
-          </header>
+                <ul class="auth-nav list">
+                  <li><a class="btn secondary" href="">sign in</a></li>
+                  <li><a class="btn primary" href="">sign up</a></li>
+                </ul>
+              </nav>
+            </header>
+          </div>
         </fieldset>
       </form>
 
       <form>
         <fieldset>
           <legend>HEADER</legend>
+          <div class="container">
+            <header>
+              <nav>
+                <a class="logo" href="/">
+                  <img src="./images/svg/logo.svg" alt="logo" width="60" />
+                  photo</a
+                >
 
-          <header>
-            <nav>
-              <a class="logo" href="/">
-                <img src="./images/svg/logo.svg" alt="logo" width="60" />
-                photo</a
-              >
+                <ul class="list">
+                  <li><a href="abc" title>one</a></li>
+                  <li><a href="bcd">two</a></li>
+                  <li><a href="cde">three</a></li>
+                </ul>
 
-              <ul>
-                <li><a href="abc" title>one</a></li>
-                <li><a href="bcd">two</a></li>
-                <li><a href="cde">three</a></li>
-              </ul>
-
-              <ul>
-                <li><a href="">sign in</a></li>
-                <li><a href="">sign up</a></li>
-              </ul>
-            </nav>
-          </header>
+                <ul class="list">
+                  <li><a href="">sign in</a></li>
+                  <li><a href="">sign up</a></li>
+                </ul>
+              </nav>
+            </header>
+          </div>
         </fieldset>
       </form>
 
-      <form>
-        <fieldset>
+      <form class="bg">
+        <fieldset class="hero">
           <legend>hero</legend>
 
-          <div>
+          <div class="">
             <section class="section">
               <h1 class="hero-title">the main heading</h1>
 
-              <a href="">join</a>
+              <a class="button primary" href="">join</a>
             </section>
           </div>
 
@@ -141,184 +146,223 @@
           <legend>SECTION</legend>
 
           <section class="section">
-            <h2 class="section-title">section title</h2>
+            <div class="container">
+              <h2 class="section-title centered">section title</h2>
 
-            <ul class="feature-list list">
-              <li>
-                <h3 class="title">small title</h3>
-                <p class="text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
-                  et sunt nemo eius reiciendis nihil. Veniam omnis adipisci
-                  dolor quas.
-                </p>
-                <a href="" class="btn secondary">learn more</a>
-              </li>
-              <li>
-                <h3 class="title">small title</h3>
-                <p class="text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
-                  et sunt nemo eius reiciendis nihil. Veniam omnis adipisci
-                  dolor quas.
-                </p>
-                <a href="" class="btn secondary">learn more</a>
-              </li>
-              <li>
-                <h3 class="title">small title</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
-                  et sunt nemo eius reiciendis nihil. Veniam omnis adipisci
-                  dolor quas.
-                </p>
-                <a href="" class="btn secondary">learn more</a>
-              </li>
-              <li>
-                <h3 class="title">small title</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
-                  et sunt nemo eius reiciendis nihil. Veniam omnis adipisci
-                  dolor quas.
-                </p>
-                <a href="">learn more</a>
-              </li>
-            </ul>
+              <ul class="feature-list list">
+                <li>
+                  <h3 class="title">small title</h3>
+                  <p class="text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+                    et sunt nemo eius reiciendis nihil. Veniam omnis adipisci
+                    dolor quas.
+                  </p>
+                  <a href="" class="btn secondary">learn more</a>
+                </li>
+                <li>
+                  <h3 class="title">small title</h3>
+                  <p class="text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+                    et sunt nemo eius reiciendis nihil. Veniam omnis adipisci
+                    dolor quas.
+                  </p>
+                  <a href="" class="btn secondary">learn more</a>
+                </li>
+                <li>
+                  <h3 class="title">small title</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+                    et sunt nemo eius reiciendis nihil. Veniam omnis adipisci
+                    dolor quas.
+                  </p>
+                  <a href="" class="btn secondary">learn more</a>
+                </li>
+                <li>
+                  <h3 class="title">small title</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+                    et sunt nemo eius reiciendis nihil. Veniam omnis adipisci
+                    dolor quas.
+                  </p>
+                  <a href="">learn more</a>
+                </li>
+              </ul>
+            </div>
           </section>
 
           <hr color="green" />
 
-          <section class="section">
-            <h2 class="section-title">section title</h2>
+          <section class="section no-padding">
+            <div class="container">
+              <h2 class="section-title centered">section title</h2>
 
-            <ul class="list">
-              <li>
-                <img
-                  src="./images/svg/default_meddium.svg"
-                  alt="photo description"
-                  width="440"
-                />
-                <h3 class="title">small title</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
-                  et sunt nemo eius reiciendis nihil. Veniam omnis adipisci
-                  dolor quas.
-                </p>
-              </li>
+              <ul class="work-list list">
+                <li class="item">
+                  <img
+                    src="./images/svg/default_meddium.svg"
+                    alt="photo description"
+                    width="440"
+                  />
+                  <h3 class="title">small title</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+                    et sunt nemo eius reiciendis nihil. Veniam omnis adipisci
+                    dolor quas.
+                  </p>
+                </li>
 
-              <li>
-                <img
-                  src="./images/svg/default_meddium.svg"
-                  alt="photo description"
-                  width="440"
-                />
-                <h3 class="title">small title</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
-                  et sunt nemo eius reiciendis nihil. Veniam omnis adipisci
-                  dolor quas.
-                </p>
-              </li>
-            </ul>
-          </section>
+                <li class="item">
+                  <img
+                    src="./images/svg/default_meddium.svg"
+                    alt="photo description"
+                    width="440"
+                  />
+                  <h3 class="title">small title</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+                    et sunt nemo eius reiciendis nihil. Veniam omnis adipisci
+                    dolor quas.
+                  </p>
+                </li>
 
-          <hr color="green" />
+                <li class="item">
+                  <img
+                    src="./images/svg/default_meddium.svg"
+                    alt="photo description"
+                    width="440"
+                  />
+                  <h3 class="title">small title</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+                    et sunt nemo eius reiciendis nihil. Veniam omnis adipisci
+                    dolor quas.
+                  </p>
+                </li>
 
-          <section class="section">
-            <h2 class="section-title">section title</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum et
-              sunt nemo eius reiciendis nihil. Veniam omnis adipisci dolor quas.
-            </p>
-
-            <ul class="list">
-              <li>
-                <a href="">
-                  <img src="./images/svg/default_small.svg" alt="" />
-                </a>
-              </li>
-
-              <li>
-                <a href="">
-                  <img src="./images/svg/default_small.svg" alt="" />
-                </a>
-              </li>
-
-              <li>
-                <a href="">
-                  <img src="./images/svg/default_small.svg" alt="" />
-                </a>
-              </li>
-
-              <li>
-                <a href="">
-                  <img src="./images/svg/default_small.svg" alt="" />
-                </a>
-              </li>
-
-              <li>
-                <a href="">
-                  <img src="./images/svg/default_small.svg" alt="" />
-                </a>
-              </li>
-
-              <li>
-                <a href="">
-                  <img src="./images/svg/default_small.svg" alt="" />
-                </a>
-              </li>
-
-              <li>
-                <a href="">
-                  <img src="./images/svg/default_small.svg" alt="" />
-                </a>
-              </li>
-
-              <li>
-                <a href="">
-                  <img src="./images/svg/default_small.svg" alt="" />
-                </a>
-              </li>
-            </ul>
-          </section>
-
-          <hr color="green" />
-
-          <section class="section">
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-              illo dolor accusamus maiores dicta quaerat consectetur temporibus
-              distinctio tempore dolorum.
-            </p>
-
-            <div>
-              <a class="btn primary" href="">Join now</a>
-              <a class="btn secondary" href="">Contact us</a>
+                <li class="item">
+                  <img
+                    src="./images/svg/default_meddium.svg"
+                    alt="photo description"
+                    width="440"
+                  />
+                  <h3 class="title">small title</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+                    et sunt nemo eius reiciendis nihil. Veniam omnis adipisci
+                    dolor quas.
+                  </p>
+                </li>
+              </ul>
             </div>
           </section>
 
           <hr color="green" />
 
           <section class="section">
-            <h2 class="section-title">some title</h2>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam
-              distinctio hic quis?
-            </p>
+            <div class="container">
+              <h2 class="section-title centered">section title</h2>
+              <p class="section-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum et
+                sunt nemo eius reiciendis nihil. Veniam omnis adipisci dolor
+                quas.
+              </p>
 
-            <ul class="list">
-              <li>
-                <h3 class="title">small title</h3>
-                <p>Lorem ipsum dolor sit amet consectetur.</p>
-              </li>
-              <li>
-                <h3 class="title">small title</h3>
-                <p>Lorem ipsum dolor sit amet consectetur.</p>
-              </li>
-              <li>
-                <h3 class="title">small title</h3>
-                <p>Lorem ipsum dolor sit amet consectetur.</p>
-              </li>
-            </ul>
+              <ul class="list">
+                <li>
+                  <a href="">
+                    <img src="./images/svg/default_small.svg" alt="" />
+                  </a>
+                </li>
 
-            <img src="" alt="" />
+                <li>
+                  <a href="">
+                    <img src="./images/svg/default_small.svg" alt="" />
+                  </a>
+                </li>
+
+                <li>
+                  <a href="">
+                    <img src="./images/svg/default_small.svg" alt="" />
+                  </a>
+                </li>
+
+                <li>
+                  <a href="">
+                    <img src="./images/svg/default_small.svg" alt="" />
+                  </a>
+                </li>
+
+                <li>
+                  <a href="">
+                    <img src="./images/svg/default_small.svg" alt="" />
+                  </a>
+                </li>
+
+                <li>
+                  <a href="">
+                    <img src="./images/svg/default_small.svg" alt="" />
+                  </a>
+                </li>
+
+                <li>
+                  <a href="">
+                    <img src="./images/svg/default_small.svg" alt="" />
+                  </a>
+                </li>
+
+                <li>
+                  <a href="">
+                    <img src="./images/svg/default_small.svg" alt="" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <hr color="green" />
+
+          <section class="section">
+            <div class="container">
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Nostrum illo dolor accusamus maiores dicta quaerat consectetur
+                temporibus distinctio tempore dolorum.
+              </p>
+
+              <div>
+                <a class="btn primary" href="">Join now</a>
+                <a class="btn secondary" href="">Contact us</a>
+              </div>
+            </div>
+          </section>
+
+          <hr color="green" />
+
+          <section class="section">
+            <div class="container">
+              <h2 class="section-title">some title</h2>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam
+                distinctio hic quis?
+              </p>
+
+              <ul class="list">
+                <li>
+                  <h3 class="title">small title</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur.</p>
+                </li>
+                <li>
+                  <h3 class="title">small title</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur.</p>
+                </li>
+                <li>
+                  <h3 class="title">small title</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur.</p>
+                </li>
+              </ul>
+
+              <img src="" alt="" />
+            </div>
           </section>
 
           <hr color="green" />
@@ -326,54 +370,56 @@
       </form>
 
       <form>
-        <fieldset>
+        <fieldset class="bg">
           <legend>footer</legend>
 
-          <ul class="list">
-            <li>
-              <a href=""> link </a>
-            </li>
-            <li>
-              <a href=""> link </a>
-            </li>
-            <li>
-              <a href=""> link </a>
-            </li>
-          </ul>
+          <div class="container">
+            <ul class="list">
+              <li>
+                <a href=""> link </a>
+              </li>
+              <li>
+                <a href=""> link </a>
+              </li>
+              <li>
+                <a href=""> link </a>
+              </li>
+            </ul>
 
-          <a class="logo" href="/">
-            <img src="./images/svg/logo.svg" alt="logo" width="60" />
-            photo</a
-          >
+            <a class="logo" href="/">
+              <img src="./images/svg/logo.svg" alt="logo" width="60" />
+              photo</a
+            >
 
-          <ul class="list">
-            <li>
-              <a href=""> link </a>
-            </li>
-            <li>
-              <a href=""> link </a>
-            </li>
-            <li>
-              <a href=""> link </a>
-            </li>
-          </ul>
+            <ul class="list">
+              <li>
+                <a href=""> link </a>
+              </li>
+              <li>
+                <a href=""> link </a>
+              </li>
+              <li>
+                <a href=""> link </a>
+              </li>
+            </ul>
 
-          <ul class="list">
-            <li>
-              <a href="" aria-label="facebook link"> facebook </a>
-            </li>
-            <li>
-              <a href="" aria-label="twitter link"> twitter </a>
-            </li>
-            <li>
-              <a href="" aria-label="linkedIn link"> linkedIn </a>
-            </li>
-            <li>
-              <a href="" aria-label="instagram link"> instagram </a>
-            </li>
-          </ul>
+            <ul class="list">
+              <li>
+                <a href="" aria-label="facebook link"> facebook </a>
+              </li>
+              <li>
+                <a href="" aria-label="twitter link"> twitter </a>
+              </li>
+              <li>
+                <a href="" aria-label="linkedIn link"> linkedIn </a>
+              </li>
+              <li>
+                <a href="" aria-label="instagram link"> instagram </a>
+              </li>
+            </ul>
 
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
 
           <hr />
         </fieldset>
@@ -384,19 +430,21 @@
           <legend>ARTICLE</legend>
 
           <section class="section">
-            <img src="" alt="" />
-            <h3 class="title">some title</h3>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum
-              reiciendis ducimus libero voluptates ea similique cum porro ab
-              cumque ipsam.
-            </p>
+            <div class="container">
+              <img src="" alt="" />
+              <h3 class="title">some title</h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum
+                reiciendis ducimus libero voluptates ea similique cum porro ab
+                cumque ipsam.
+              </p>
 
-            <ul class="list">
-              <li>Lorem ipsum dolor sit amet.</li>
-              <li>Lorem ipsum dolor sit amet.</li>
-              <li>Lorem ipsum dolor sit amet.</li>
-            </ul>
+              <ul class="list">
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+              </ul>
+            </div>
           </section>
 
           <hr />
