@@ -396,7 +396,7 @@ legend {
 
 .button-icon {
   /* геометрія */
-  display: inline-block;
+  display: inline-flex;
   width: 20px;
   height: 20px;
   vertical-align: middle;
@@ -407,4 +407,141 @@ legend {
   /* шрифт */
 
   /* динаміка */
+}
+
+/* images */
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex-box {
+  height: 192px;
+  width: calc(50% - 22px);
+  margin: 10px;
+  box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.2),
+    2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.flex-box:nth-child(1) {
+  background-color: #18a0fb;
+  background-image: url('../images/png/cat.png');
+  background-repeat: repeat-x;
+}
+
+.flex-box:nth-child(2) {
+  background-color: lightseagreen;
+  background-image: url('../images/png/bird.png');
+  background-repeat: repeat-y;
+  background-position: 50%;
+}
+
+.flex-box:nth-child(3) {
+  background-color: aquamarine;
+  background-image: url(../images/png/dog.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 35%;
+}
+
+.flex-box:nth-child(4) {
+  background-color: cornflowerblue;
+  background-image: url(../images/png/turtle.png);
+}
+
+.overlay {
+  max-width: 1600px;
+  height: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 1px solid #ccc;
+
+  background-color: rgb(116, 116, 116);
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url('../images/img/fish.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.pseudo-button {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: teal;
+  color: #fff;
+  border-radius: 3px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.pseudo-button:hover,
+.pseudo-button:focus {
+  background-color: palevioletred;
+}
+
+.pseudo-button::before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  background-image: url('../images/png/rocket-icon.png');
+  background-size: contain;
+}
+
+/* LIST */
+
+.pseudo-list {
+  display: flex;
+  padding: 0;
+  list-style: none;
+}
+
+.pseudo-list-item {
+  width: 350px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+.pseudo-list-item::before {
+  display: block;
+  content: '';
+  height: 120px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ccc;
+}
+
+.pseudo-icon-delivery::before {
+  background-image: url('../images/svg/logo.svg');
+}
+
+.pseudo-icon-mobile::before {
+  background-image: url('../images/svg/mobile-icon.svg');
+}
+
+.pseudo-icon-code::before {
+  background-image: url('../images/svg/code-icon.svg');
+}
+
+.pseudo-list-item > .pseudo-title {
+  margin-top: 0;
+}
+
+.pseudo-list-item > .pseudo-text {
+  margin-top: 0;
+  margin-bottom: 0;
 }
