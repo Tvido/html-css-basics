@@ -545,3 +545,28 @@ legend {
   margin-top: 0;
   margin-bottom: 0;
 }
+
+/* svg */
+
+.svg-actions {
+  /* display: flex; */
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.svg-button {
+  padding: 0;
+  border: none;
+}
+
+.svg-button-icon {
+  width: 50px;
+  height: 50px;
+  fill: paleturquoise;
+}
+
+.svg-button-icon:hover {
+  fill: red;
+  cursor: pointer;
+}
