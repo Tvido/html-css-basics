@@ -549,24 +549,111 @@ legend {
 /* svg */
 
 .svg-actions {
-  /* display: flex; */
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
 .svg-button {
+  width: 120px;
+  height: 120px;
   padding: 0;
   border: none;
+  color: tan;
+  background-color: transparent;
+}
+
+.svg-button:hover {
+  background-color: teal;
+  fill: red;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
 .svg-button-icon {
-  width: 50px;
-  height: 50px;
-  fill: paleturquoise;
+  fill: currentColor;
 }
 
-.svg-button-icon:hover {
-  fill: red;
-  cursor: pointer;
+.svg-button:hover .svg-button-icon {
+  fill: black;
+}
+
+.position-overlay {
+  width: 370px;
+
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+.position-overlay img {
+  width: 370px;
+}
+
+.position-overlay:hover .position-overlay-actions {
+  opacity: 1;
+}
+
+.position-overlay-thumb {
+  position: relative;
+}
+
+.position-overlay-thumb::before {
+  display: inline-block;
+  content: '';
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.position-overlay-meta {
+  padding: 15px;
+}
+
+.position-overlay-name {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.position-overlay-price {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.position-overlay-actions {
+  outline: 3px solid orange;
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+
+  opacity: 0;
+  transition: 0.4s opacity linear;
+}
+
+.position-overlay-actions .icon {
+  width: 32px;
+  height: 32px;
+}
+
+body {
+  margin: 0;
+}
+
+.fixed-header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  min-height: 80px;
+  background-color: rgba(255, 165, 0, 1);
+  outline: 1px solid black;
+}
+
+p {
+  user-select: none;
 }
